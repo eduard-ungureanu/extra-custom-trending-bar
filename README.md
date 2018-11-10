@@ -15,8 +15,11 @@ $trending_posts = new WP_Query( apply_filters( 'extra_trending_posts_query', arr
 	) ) );
 ```
 `'post_type'      => 'post',` - will show only post types
+
 `'posts_per_page' => '3',` - how many posts the trending bar should display
+
 `'cat' 			 => get_cat_ID('Video Posts'),` - show only posts from the *Video Posts* category - change this to match your category, or delete that line so that the most 3 posts will be shown.
+
 `'orderby'        => 'comment_count',` - the ordering criteria - by default the post will be ordered in DESC order based on the number of comments.
 
 Happy Blogging!
